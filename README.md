@@ -1,87 +1,40 @@
-# Medica — COVID-19 PCR Consultation & Hospital Locator App
+# Medica — COVID-19 PCR Test & Doctor Consultation App
 
-> A Flutter mobile application connecting patients with medical facilities during the COVID-19 pandemic — enabling symptom submission, PCR test scheduling, and real-time hospital location lookup without physical crowding.
+> **Mobile app helping users find PCR test centers, submit symptoms, and consult doctors remotely — reducing lab overcrowding during the COVID-19 pandemic.**
 
-[![Language](https://img.shields.io/badge/Language-Dart-blue?style=flat-square)](https://dart.dev/)
-[![Framework](https://img.shields.io/badge/Framework-Flutter-teal?style=flat-square)](https://flutter.dev/)
-[![Domain](https://img.shields.io/badge/Domain-Healthcare%20Technology-green?style=flat-square)]()
+[![Flutter](https://img.shields.io/badge/Flutter-3.x-blue.svg)](https://flutter.dev/)
+[![Dart](https://img.shields.io/badge/Dart-3.x-blue.svg)](https://dart.dev/)
+[![Domain](https://img.shields.io/badge/Domain-Healthcare-green.svg)]()
 
 ---
 
 ## Overview
 
-**Medica** was developed to address a critical healthcare logistics problem during the COVID-19 pandemic: overwhelming demand at PCR testing labs causing dangerous crowd conditions. The app creates a **digital triage and consultation layer** — patients submit symptoms remotely, receive medical guidance, and are directed to the nearest available hospital — reducing unnecessary physical visits and protecting both patients and healthcare workers.
+This app is designed to help a large segment of people who want to sit for a **PCR test** to see whether they are COVID-19 positive or not. It allows easier contact with doctors to have a consultation **without overcrowding the tests’ lab**.
+
+The project is composed of **2 parts**:
+
+1. **Patients** — submit their symptoms and get guidance
+2. **Hospitals** — listed with their exact locations to help users get there faster
 
 ---
 
-## App Architecture — Two-Part System
+## Demo
 
-### Part 1: Patient Interface
-The patient-facing module allows individuals to:
-- **Submit symptoms** via a structured form (fever, cough, fatigue, loss of smell/taste, shortness of breath, etc.)
-- **Receive preliminary guidance** based on symptom severity (self-isolate / book PCR / seek emergency care)
-- **Schedule a PCR test appointment** at a nearby hospital without physically queueing
-- **Track test status** and receive result notifications
-- **Consult a doctor remotely** via in-app messaging to avoid unnecessary lab visits
-
-### Part 2: Hospital & Location Module
-The hospital discovery module provides:
-- **Real-time map view** of nearby hospitals and PCR testing centers
-- **Exact GPS coordinates** and navigation integration for routing
-- **Facility capacity indicators** to help users choose less-crowded testing sites
-- **Contact information** (phone, address) for each listed facility
+https://user-images.githubusercontent.com/83555471/154261759-44ef2f2b-50c3-41b3-a39d-be83108a27aa.mp4
 
 ---
 
-## Key Features
+## Features
 
-| Feature | Description |
-|---|---|
-| Symptom checker | Structured form with severity scoring |
-| Doctor consultation | Remote messaging without physical visit |
-| PCR test booking | Appointment scheduling to reduce crowding |
-| Hospital locator | GPS-based map with facility details |
-| Navigation integration | Direct routing to selected hospital |
-| Result tracking | Push notification on test result availability |
+- Submit symptoms for remote doctor consultation
+- Browse hospitals and test centers with exact map locations
+- Reduces physical overcrowding at PCR test labs
+- Two-sided platform: patient view + hospital/location directory
 
 ---
 
-## Technical Stack
-
-```
-Frontend:  Flutter (Dart)
-State Mgmt: setState / Provider
-Maps:       Google Maps Flutter plugin
-Location:   Geolocator package
-Backend:    Firebase Firestore (real-time database)
-Auth:       Firebase Authentication
-Notif:      Firebase Cloud Messaging (FCM)
-```
-
-### Flutter Packages Used
-
-| Package | Purpose |
-|---|---|
-| `google_maps_flutter` | Embedded map with hospital markers |
-| `geolocator` | Real-time GPS location of the user |
-| `firebase_firestore` | Symptom data storage and doctor responses |
-| `firebase_auth` | Patient and doctor account management |
-| `firebase_messaging` | Push notifications for test results |
-| `flutter_local_notifications` | In-app notification display |
-
----
-
-## UI/UX Design Principles
-
-- **High-contrast text** for readability across age groups and accessibility needs
-- **Large touch targets** (minimum 48×48dp) for users with motor impairments
-- **Simplified navigation hierarchy** — 3-step maximum to reach any core function
-- **Color-coded severity indicators** (green / yellow / red) for symptom assessment results
-- **Offline-friendly** symptom form with local caching before sync
-
----
-
-## Getting Started
+## Installation
 
 ```bash
 git clone https://github.com/tamer017/medica.git
@@ -90,16 +43,14 @@ flutter pub get
 flutter run
 ```
 
-> **Note:** Firebase configuration files (`google-services.json` for Android, `GoogleService-Info.plist` for iOS) and a valid Google Maps API key are required to run the full app.
+---
+
+## Skills & Concepts
+
+`Flutter` `Dart` `Healthcare App` `Mobile Development` `Maps Integration` `COVID-19` `Symptom Checker` `UI Design`
 
 ---
 
-## Demo
+## Author
 
-See the demo video in the repository for a live walkthrough of the symptom submission and hospital locator flows.
-
----
-
-## Skills Demonstrated
-
-`Flutter` `Dart` `Firebase Firestore` `Firebase Auth` `Google Maps API` `GPS/Geolocator` `Push Notifications` `Healthcare App Design` `Mobile UX` `Real-Time Data` `State Management`
+**Ahmed Tamer Assy** — [GitHub](https://github.com/tamer017) | Machine Learning Researcher @ Volkswagen AG
